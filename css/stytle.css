@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 70px;
+}
+@media (min-width: 375px) {
+  .container {
+    margin: 0 5px;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .container {
+    margin: 0 40px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Start Navigation */
+.container {
+  padding: 15px;
+}
+.container .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container .navigation .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.container .navigation .links > li {
+  margin-inline: 15px;
+}
+.container .navigation .links > li > a {
+  color: hsl(236, 13%, 42%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.container .navigation .links > li:hover a {
+  color: hsl(35, 77%, 62%);
+}
+@media (max-width: 767px) {
+  .container .navigation .links {
+    display: none;
+  }
+}
+.container .navigation .bars-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .container .navigation .bars-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* End Navigation */
+/* OVERLAY */
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/* Start Mobile Navigation */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  width: 450px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: hsl(36, 100%, 99%);
+  padding: 20px;
+  z-index: 101;
+}
+.mobile-nav .x-icon {
+  display: block;
+  text-align: right;
+  margin-bottom: 60px;
+  cursor: pointer;
+  font-size: 25px;
+}
+.mobile-nav .mobile-links li {
+  margin-block: 20px;
+}
+.mobile-nav .mobile-links li a {
+  color: hsl(240, 100%, 5%);
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.mobile-nav .mobile-links li a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+/* End Mobile Navigation */
+/* Start Landing */
+.container .landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.container .landing .landing-img {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+.container .landing .landing-img > img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .container .landing .landing-img > img {
+    content: url("../assets/images/image-web-3-mobile.jpg");
+  }
+}
+.container .landing .landing-img .info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 6fr;
+  grid-template-columns: 6fr 6fr;
+  margin: 10px 0;
+}
+.container .landing .landing-img .info h1 {
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 50px;
+}
+.container .landing .landing-img .info .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container .landing .landing-img .info .text .paragraph {
+  color: hsl(236, 13%, 42%);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.container .landing .landing-img .info .text .read-more {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.container .landing .landing-img .info .text .read-more:hover {
+  background-color: hsl(35, 77%, 62%);
+}
+@media (max-width: 767px) {
+  .container .landing .landing-img .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .landing .landing-img .info .text > p {
+    margin-block: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .container .landing .landing-img {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+.container .landing .news-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: hsl(240, 100%, 5%);
+  padding: 25px;
+}
+.container .landing .news-box h2 {
+  color: hsl(35, 77%, 62%);
+  margin-top: 20px;
+  font-size: 30px;
+}
+.container .landing .news-box .rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.container .landing .news-box .rows .news-row {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-block: 30px;
+}
+.container .landing .news-box .rows .news-row .news-title {
+  margin-bottom: 10px;
+}
+.container .landing .news-box .rows .news-row .news-title a {
+  color: hsl(36, 100%, 99%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.container .landing .news-box .rows .news-row .news-title:hover a {
+  color: hsl(35, 77%, 62%);
+}
+.container .landing .news-box .rows .news-row .news {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.container .landing .news-box .rows .news-row:not(:last-child) {
+  border-bottom: 2px solid hsl(36, 100%, 99%);
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .container .landing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* End Landing */
+/* Start Products Section */
+.container .products-section {
+  margin-block: 30px;
+}
+.container .products-section .boxes {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 30px;
+}
+.container .products-section .boxes .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container .products-section .boxes .box img {
+  width: 150px;
+  max-width: 100%;
+}
+.container .products-section .boxes .box .info {
+  margin-left: 30px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container .products-section .boxes .box .info .position {
+  font-size: 50px;
+  font-weight: 800;
+  color: hsl(233, 8%, 79%);
+}
+.container .products-section .boxes .box .info .product-title a {
+  font-size: 20px;
+  font-weight: 900;
+  color: hsl(240, 100%, 5%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.container .products-section .boxes .box .info .product-title:hover a {
+  color: hsl(5, 85%, 63%);
+}
+.container .products-section .boxes .box .info .description {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.7;
+}
+
+/* End Products Section */
