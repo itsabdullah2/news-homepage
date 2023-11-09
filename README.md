@@ -1,4 +1,5 @@
 # Frontend Mentor - News homepage
+## Live server: https://itsabdullah2.github.io/news-homepage/
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
